@@ -12,32 +12,32 @@ def step1(units):
 
 
 def step2(units):
-    # Unit up to 75 --> price 7.20
-    total_bill = (units - 75) * 7.20 + step1(75)
+    # Unit up to 75 --> price 8.50
+    total_bill = (units - 75) * 8.5 + step1(75)
     return total_bill
 
 
 def step3(units):
-    # Unit up to 200 --> price 7.59
-    total_bill = (units - 200) * 7.59 + step2(200)
+    # Unit up to 200 --> price 9.10
+    total_bill = (units - 200) * 9.1 + step2(200)
     return total_bill
 
 
 def step4(units):
-    # Unit up to 300 --> price 8.02
-    total_bill = (units - 300) * 8.02 + step3(300)
+    # Unit up to 300 --> price 9.62
+    total_bill = (units - 300) * 9.62 + step3(300)
     return total_bill
 
 
 def step5(units):
-    # Unit up to 400 --> price 12.67
-    total_bill = (units - 400) * 12.67 + step4(400)
+    # Unit up to 400 --> price 15.01
+    total_bill = (units - 400) * 15.01 + step4(400)
     return total_bill
 
 
 def step6(units):
-    # Unit up to 600 --> price 14.61
-    total_bill = (units - 600) * 14.61 + step5(600)
+    # Unit up to 600 --> price 17.35
+    total_bill = (units - 600) * 17.35 + step5(600)
     return total_bill
 
 
@@ -80,9 +80,9 @@ def main():
     print("="*40)
     print("\tElectricity Bill")
     print("="*40)
-    print(f"\nTotal Units: {total_units}\nDemand Load: {demand_load} KW\nEnergy Charge: {total_bill} Tk\nDemand Charge: {demand_charge} Tk\nVat: {vat}")
+    print(f"\nTotal Units: {total_units}\nDemand Load: {demand_load} KW\nEnergy Charge: {total_bill: .2f} Tk\nDemand Charge: {demand_charge} Tk\nVat: {vat: .2f}")
     print("-"*40)
-    print(f"Total Amount: {payable_amount} Tk\n")
+    print(f"Total Amount: {payable_amount: .2f} Tk\n")
     print("="*40)
     
 

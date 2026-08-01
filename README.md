@@ -108,7 +108,7 @@ Example
 ```text
 Total Units : 451
 
-Demand Load : 2 KW
+Demand Load in KW(Its generally 1 or 2 in LT-A) : 2 
 ```
 
 ---

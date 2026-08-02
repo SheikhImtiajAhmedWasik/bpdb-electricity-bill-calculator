@@ -79,11 +79,11 @@ The application demonstrates:
 |-------:|------|
 | Life Line (0–50 Units) | **Tk 4.63 / Unit** |
 | Step 1 (0–75 Units) | **Tk 5.26 / Unit** |
-| Step 2 (76–200 Units) | **Tk 7.20 / Unit** |
-| Step 3 (201–300 Units) | **Tk 7.59 / Unit** |
-| Step 4 (301–400 Units) | **Tk 8.02 / Unit** |
-| Step 5 (401–600 Units) | **Tk 12.67 / Unit** |
-| Step 6 (601+ Units) | **Tk 14.61 / Unit** |
+| Step 2 (76–200 Units) | **Tk 8.50 / Unit** |
+| Step 3 (201–300 Units) | **Tk 9.10 / Unit** |
+| Step 4 (301–400 Units) | **Tk 9.62 / Unit** |
+| Step 5 (401–600 Units) | **Tk 15.01 / Unit** |
+| Step 6 (601+ Units) | **Tk 17.35 / Unit** |
 
 ### Demand Charge
 

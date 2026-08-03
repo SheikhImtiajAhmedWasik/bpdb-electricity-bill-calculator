@@ -85,6 +85,7 @@ def main():
 
         vat = total_bill * (5/100)
         payable_amount = total_bill + demand_charge + vat
+        payable_amount_with_meter_rent = payable_amount + 40
 
         # final output
         print("="*40)
@@ -92,7 +93,8 @@ def main():
         print("="*40)
         print(f"\nTotal Units: {total_units}\nDemand Load: {demand_load} KW\nEnergy Charge: {total_bill: .2f} Tk\nDemand Charge: {demand_charge} Tk\nVat: {vat: .2f}")
         print("-"*40)
-        print(f"Total Amount: {payable_amount: .2f} Tk\n")
+        print(f"Total Amount: {payable_amount: .2f} Tk")
+        print(f"Total Amount: {payable_amount_with_meter_rent: .2f} Tk(Include Meter rent)\n")
         print("="*40)
     
 

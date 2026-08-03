@@ -42,48 +42,58 @@ def step6(units):
 
 
 def main():
-    # User Input
-    total_units = float(input("Total Units: "))
-    demand_load = int(input("Demand Load in KW(Its generally 1 or 2 in LT-A): "))
+    try:
+        # User Input
+        total_units = float(input("Total Units: "))
+        if total_units < 0:
+            raise Exception("Negative Units! Unit can't be negative.")
+        demand_load = int(input("Demand Load in KW(Its generally 1 or 2 in LT-A): "))
+        if demand_load < 0:
+            raise Exception("Invalid Demand Load!")
+    except ValueError:
+        print("Invalid number!")
+    except Exception as e:
+        print(e)
 
-    # Output variable
-    total_bill = 0
-    demand_charge = demand_load * 42
-    vat = 0
-    payable_amount = 0
-
-    if total_units > 600:
-        total_bill = step6(total_units)
-
-    elif total_units > 400:
-        total_bill = step5(total_units)
-
-    elif total_units > 300:
-        total_bill = step4(total_units)
-
-    elif total_units > 200:
-        total_bill = step3(total_units)
-
-    elif total_units > 75:
-        total_bill = step2(total_units)
-
-    elif total_units > 50:
-        total_bill = step1(total_units)
     else:
-        total_bill = life_line(total_units)
+        # Output variable
+        total_bill = 0
+        demand_charge = demand_load * 42
+        vat = 0
+        payable_amount = 0
+
+        if total_units > 600:
+            total_bill = step6(total_units)
+
+        elif total_units > 400:
+            total_bill = step5(total_units)
+
+        elif total_units > 300:
+            total_bill = step4(total_units)
+
+        elif total_units > 200:
+            total_bill = step3(total_units)
+
+        elif total_units > 75:
+            total_bill = step2(total_units)
+
+        elif total_units > 50:
+            total_bill = step1(total_units)
+        else:
+            total_bill = life_line(total_units)
 
 
-    vat = total_bill * (5/100)
-    payable_amount = total_bill + demand_charge + vat
+        vat = total_bill * (5/100)
+        payable_amount = total_bill + demand_charge + vat
 
-    # final output
-    print("="*40)
-    print("\tElectricity Bill")
-    print("="*40)
-    print(f"\nTotal Units: {total_units}\nDemand Load: {demand_load} KW\nEnergy Charge: {total_bill: .2f} Tk\nDemand Charge: {demand_charge} Tk\nVat: {vat: .2f}")
-    print("-"*40)
-    print(f"Total Amount: {payable_amount: .2f} Tk\n")
-    print("="*40)
+        # final output
+        print("="*40)
+        print("\tElectricity Bill")
+        print("="*40)
+        print(f"\nTotal Units: {total_units}\nDemand Load: {demand_load} KW\nEnergy Charge: {total_bill: .2f} Tk\nDemand Charge: {demand_charge} Tk\nVat: {vat: .2f}")
+        print("-"*40)
+        print(f"Total Amount: {payable_amount: .2f} Tk\n")
+        print("="*40)
     
 
 

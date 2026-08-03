@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ BPDB Electricity Bill Calculator
+# ⚡ Electricity Bill Calculator
 
 ### 🐍 A Python Console Application for Calculating Residential Electricity Bills (LT-A)
 
@@ -19,11 +19,11 @@ Have you ever wondered:
 
 > **"How much will my electricity bill be this month if I already know my total electricity usage?"**
 
-The Bangladesh Power Development Board (BPDB) publishes electricity tariff rates, but there is no simple calculator or public API to instantly calculate the final bill.
+The Bangladesh Energy Regulatory Commission(BERC) publishes electricity tariff rates, but there is no simple calculator or public API to instantly calculate the final bill.
 
 This project solves that problem.
 
-The application calculates the **Residential (LT-A)** electricity bill based on the official BPDB tariff, including:
+The application calculates the **Residential (LT-A)** electricity bill based on the official BERC tariff, including:
 
 - ⚡ Step-wise electricity charges
 - 💰 Demand Charge
@@ -41,7 +41,7 @@ and the program calculates your estimated electricity bill.
 
 # 🎯 Objective
 
-Develop a Python console application that accurately calculates **BPDB Residential (LT-A)** electricity bills using the official step tariff system.
+Develop a Python console application that accurately calculates **Residential (LT-A)** electricity bills using the official step tariff system.
 
 The application demonstrates:
 
@@ -57,7 +57,7 @@ The application demonstrates:
 
 ✅ Calculate Residential Electricity Bill
 
-✅ Supports BPDB LT-A Tariff
+✅ Supports BERC LT-A Tariff
 
 ✅ Automatic Step-wise Unit Calculation
 
@@ -157,7 +157,7 @@ Total Amount : xxxx.xx Tk
 
 # ⚙️ Functional Requirements
 
-The calculation follows the official BPDB tariff system.
+The calculation follows the official BERC tariff system.
 
 If the electricity usage qualifies for the **Life Line** tariff (0–50 units), the bill is calculated using the Life Line rate.
 
@@ -221,7 +221,7 @@ Step 2
 Step 1
 ```
 
-This ensures the bill is calculated exactly according to the BPDB step tariff system.
+This ensures the bill is calculated exactly according to the BERC step tariff system.
 
 ---
 
@@ -337,7 +337,6 @@ The application validates:
 
 - Negative Units
 - Invalid Numbers
-- Empty Input
 - Invalid Demand Load
 
 The program should never terminate unexpectedly because of invalid user input.
@@ -346,9 +345,9 @@ The program should never terminate unexpectedly because of invalid user input.
 
 # 📚 Data Source
 
-The tariff rates used in this application were collected from the official **Bangladesh Power Development Board (BPDB)** residential electricity tariff notice.
+The tariff rates used in this application were collected from the official **Bangladesh Energy Regulatory Commission(BERC)** residential electricity tariff notice.
 
-Since BPDB does not currently provide a public API or machine-readable dataset for tariff calculations, the pricing information has been manually incorporated into the application.
+Since BERC does not currently provide a public API or machine-readable dataset for tariff calculations, the pricing information has been manually incorporated into the application.
 
 ---
 
@@ -370,7 +369,7 @@ Possible future enhancements include:
 
 ## ⭐ Built with Python
 
-A practical utility application that helps Bangladeshi residential consumers estimate their electricity bills using the official **BPDB LT-A tariff structure**.
+A practical utility application that helps Bangladeshi residential consumers estimate their electricity bills using the official **BERC LT-A tariff structure**.
 
 If you found this project useful, consider giving it a ⭐ on GitHub!
 
